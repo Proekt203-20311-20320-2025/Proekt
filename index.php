@@ -29,6 +29,7 @@ if (!$result) {
             >
                 <!-- Име и бранд -->
                 <?php echo $row['name'] . " - " . $row['brand']; ?>
+                <!-- капацитет / цена -->
                 <span class="ac-info">
                     (<?php echo $row['capacity']; ?> / <?php echo $row['price']; ?> лв.)
                 </span>
