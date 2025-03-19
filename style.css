@@ -1,1 +1,97 @@
+/* Нулираме основни отстояния и рамки, за по-консистентен вид */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Стил за цялото тяло на документа */
+body {
+    background-color: #f5f5f5; /* Светъл фон */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px; /* Малко отстояние от краищата на прозореца */
+}
+
+/* Стил за заглавие H1 */
+h1 {
+    margin-bottom: 15px;
+}
+
+/* Стил за списъците (ul) и техните елементи (li) */
+ul {
+    list-style-type: disc; /* Точки отпред */
+    margin-left: 40px;
+    margin-top: 15px;      /* Разстояние от заглавието */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Стил за линковете */
+a {
+    color: #007bff;       /* Син цвят за линкове */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Нулираме полетата и рамките по подразбиране */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стил за тялото на документа */
+body {
+    background-color: #f5f5f5; /* Светъл фон */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+/* Заглавие */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Контейнер, който държи всички бутони */
+.ac-list {
+    display: flex;
+    flex-wrap: wrap;     /* Позволява пренасяне на следващ ред, когато няма място */
+    gap: 10px;           /* Разстояние между бутоните (вместо margin) */
+}
+
+/* Бутоните за климатици */
+.ac-button {
+    display: inline-block;       /* Или може 'flex'/'block' в зависимост от предпочитанията */
+    padding: 15px 20px;
+    background-color: #007bff;   /* Син фон */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    min-width: 200px;            /* Минимална широчина, за да "заемат място" */
+    text-align: center;
+}
+
+/* Когато задържим мишката */
+.ac-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилизиране на допълнителната информация (в скобите) */
+.ac-button .ac-info {
+    display: block;          /* Слагаме го на нов ред (ако желаем) */
+    margin-top: 5px;         /* Малко разстояние от горния текст */
+    font-size: 0.9em;        /* По-малък шрифт */
+    font-weight: normal;     /* По-лек от bold */
+    color: #ddd;             /* По-светъл цвят */
+}
